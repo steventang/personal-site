@@ -84,14 +84,15 @@ body {
   margin: -2em; /* 2em = 4em/2 */ /* half the width */
 }
 
-.circle-container img { display: block; width: 100%; }
-
-.cirlce-container img.top:hover {
-  opacity:0;
+.circle-container a:hover {
+  width: 5em; height: 5em;
 }
+
+.circle-container img { display: block; width: 100%; }
 
 .deg54 { 
   transform: rotate(54deg) translate(10em) rotate(-54deg); /*translate 9 instead of 10 bc of padding of 1em for the background circle*/
+
 }
 .deg126 { 
   transform: rotate(126deg) translate(10em) rotate(-126deg);
@@ -104,13 +105,19 @@ body {
 }
 .deg342 { 
   transform: rotate(342deg) translate(10em) rotate(-342deg);
+  background-image: url('../assets/hover-twitter.png');
+  background-size: 5em;
 }
 
 .deg54, .deg126, .deg198, .deg270, .deg342 {
-  background: #474549;
+  background-color: #474549;
   border-radius: 50%;
-  padding: 0.8em;
+  padding: 0.8em; /*draws a circle larger than image*/
   margin: -2.8em !important; /*override 2em margin, then adjust for the .8 extra*/
+}
+
+.deg54:hover, .deg126:hover, .deg198:hover, .deg270:hover, .deg342:hover{
+  padding: .1em;
 }
 
 
@@ -135,7 +142,8 @@ body {
 }
 
 .circle-container:hover:after { opacity: 1; }
-.circle-container a:not(.center):after {
+
+/*.circle-container a:not(.center):after {
   position: absolute;
   top: 50%; left: 50%;
   width: 4px; height: 4px;
@@ -145,7 +153,7 @@ body {
   background: deeppink;
   opacity: .3;
   content: '';
-}
+}*/
 .circle-container:hover a:after { opacity: 1; }
 .circle-container a:hover:after { opacity: .5; }
 
