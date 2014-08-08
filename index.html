@@ -7,6 +7,14 @@
 		<link rel="stylesheet" type="text/css" href="assets/stylesheets/skeleton.css" />
 		<link rel="stylesheet" type="text/css" href="assets/stylesheets/component.css" />
 		<script src="assets/javascripts/modernizr.custom.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+    		$(".left li a").mouseover(function(){
+         $(".bullet").css("color", "#D77691");
+     		});
+			});
+		</script>
 		<title>Steven Tang</title>
 	</head>
 	<body>
@@ -15,12 +23,19 @@
 				<div class="left six columns offset-by-one">
 					<h1>Steven Tang</h1>
 					<p>
-						I've dabbled in startups, numbers, and finance. Tangentially interested in design. I'm currently working on Ribbon and live in San Francisco.
+						I've dabbled in startups, finance, and numbers. I like designing things for fun. I'm currently working on <a href="http://ribbon.co" target="_blank">Ribbon</a> and live in San Francisco.
 					</p>
 					<ul>
 						<li><a href="mailto: stang12290@gmail.com"><span class="bullet mail-icon"></span>Contact Me</a></li>	
 						<li><a href="#"><span class="bullet problem-icon"></span>A fun problem</a></li>
 					</ul>
+					<div class="mobile-social-icons">			
+				    <a target="_blank" href="http://twitter.com/stevenytang" class="mobile-twitter"></a>
+				    <a target="_blank" href="http://medium.com/@stevenytang" class="mobile-medium"></a>
+				    <a target="_blank" href="http://linkedin.com/profile/view?id=128855625" class="mobile-linkedin"></a>
+				    <a target="_blank" href="http://dribbble.com/steventang" class="mobile-dribbble"></a>
+				    <a target="_blank" href="http://facebook.com/steven.yifan.tang" class="mobile-facebook"></a>
+					</div>
 				</div>
 				<div class="right six columns offset-by-one">
 					<div class="circle-container hi-icon-effect-1 hi-icon-effect-1a">
