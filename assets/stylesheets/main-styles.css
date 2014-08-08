@@ -41,7 +41,7 @@ body {
 }
 
 .main {
-  top: 2em;
+  top: 4em;
   padding: 1em;
   position: relative;
   width: 100%;
@@ -52,31 +52,35 @@ body {
   vertical-align: top;
   display: inline-block;
   text-align: left;
-
+  margin: 1em;
 }
 
 .left h1 {
-  font-family: "Hallo Sans", "Simplifica", "Arial";
-  letter-spacing: .05em;
-  font-weight: 400;
+  font-family: "Simplifica", "Arial";
+  letter-spacing: .1em;
+  font-weight: 600;
   color: #DFD9EC;
-  font-size: 48px;
+  font-size: 44px;
   text-transform: uppercase;
 }
 
 .left ul {
-  list-style-image: url('../images/default-list.svg');
   font-family: "Hallo Sans", "Simplifica", "Arial";
   font-weight: lighter;
   color: #A19DB6;
-  font-size: 30px;
+  font-size: 24px;
   margin: 0;
-  padding: 0em;
-  padding-left: .7em;
+  padding-left: 0em;
+  list-style: none;
 }
 .left li {
-  padding: .4em;
+  padding-top: .5em;
+  padding-bottom: .5em;
   vertical-align: top;
+}
+
+.left li a:hover {
+  color: #D77691;
 }
 
 .left a {
@@ -84,14 +88,27 @@ body {
   text-decoration: inherit;
 }
 
-.left ul a:hover {
-  list-style-image: url('../images/hover-list.svg');
-}
-
 .left p {
   font-family: 'Hallo Sans';
   font-size: 20px;
+  font-weight: 400;
   color: #DFD9EC;
+}
+
+.bullet {
+  margin-right: .5em;
+  font-family: 'iconfont';
+
+  color: inherit;
+  font-weight: 100;
+}
+
+.mail-icon:before {
+  content: "\e002";
+}
+
+.problem-icon:before {
+  content: "\e105";
 }
 
 .right {
@@ -108,8 +125,8 @@ body {
   margin: 1.75em auto 0;
 }
 .circle-container a {
-  display: block;
-  overflow: hidden;
+  /*display: block;
+  overflow: hidden;*/
   position: absolute;
   top: 50%; left: 50%;
   width: 4em; height: 4em;
@@ -218,14 +235,14 @@ body {
 }
 
 /* Effect 1 */
-.hi-icon-effect-1 .hi-icon {
+/*.icon-effect .icon {
   background: rgba(255,255,255,0.1);
   -webkit-transition: background 0.2s, color 0.2s;
   -moz-transition: background 0.2s, color 0.2s;
   transition: background 0.2s, color 0.2s;
 }
 
-.hi-icon-effect-1 .hi-icon:after {
+.icon-effect .icon:after {
   top: -7px;
   left: -7px;
   padding: 7px;
@@ -241,15 +258,18 @@ body {
 }
 
 /* Effect 1a */
-.no-touch .hi-icon-effect-1a .hi-icon:hover {
+/*.no-touch .icon-effect-1 .icon:hover {
   background: rgba(255,255,255,1);
   color: #41ab6b;
 }
 
-.no-touch .hi-icon-effect-1a .hi-icon:hover:after {
+.no-touch .icon-effect .icon:hover:after {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
   opacity: 1;
 }
+
+@media only screen and (max-width: 767px) {
+  .wrapper {background-image: none;}

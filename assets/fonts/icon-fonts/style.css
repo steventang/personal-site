@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-rxohqd');
-	src:url('fonts/icomoon.eot?#iefix-rxohqd') format('embedded-opentype'),
-		url('fonts/icomoon.woff?-rxohqd') format('woff'),
-		url('fonts/icomoon.ttf?-rxohqd') format('truetype'),
-		url('fonts/icomoon.svg?-rxohqd#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?-nze04a');
+	src:url('fonts/icomoon.eot?#iefix-nze04a') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-nze04a') format('woff'),
+		url('fonts/icomoon.ttf?-nze04a') format('truetype'),
+		url('fonts/icomoon.svg?-nze04a#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,6 +23,36 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-grid:before {
+	content: "\e01a";
+}
+.icon-envelope:before {
+	content: "\e028";
+}
+.icon-wine:before {
+	content: "\e043";
+}
+.icon-heart:before {
+	content: "\e04a";
+}
+.icon-mail:before {
+	content: "\e002";
+}
+.icon-disc:before {
+	content: "\e019";
+}
+.icon-heart2:before {
+	content: "\e024";
+}
+.icon-globe:before {
+	content: "\e078";
+}
+.icon-grid2:before {
+	content: "\e102";
+}
+.icon-loader:before {
+	content: "\e105";
+}
 .icon-medium-icon:before {
 	content: "\e600";
 }
