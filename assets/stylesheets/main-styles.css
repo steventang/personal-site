@@ -52,6 +52,11 @@ a {
   margin: 0 auto;
   text-align: center;
 }
+
+/**************/
+/*LEFT SECTION*/
+/**************/
+
 .left {
   vertical-align: top;
   display: inline-block;
@@ -67,6 +72,10 @@ a {
   font-size: 44px;
   text-transform: uppercase;
 }
+
+/**************/
+/*LIST SECTION*/
+/**************/
 
 .left ul {
   font-family: "Hallo Sans", "Simplifica", "Arial";
@@ -89,10 +98,6 @@ a {
   text-decoration: inherit;
 }
 
-/*.left li a:hover {
-  color: #D77691;
-}*/
-
 .left p {
   font-family: 'Hallo Sans';
   font-size: 20px;
@@ -112,13 +117,53 @@ a {
   font-weight: 100;
 }
 
+.mail-list{}
+.problem-list{}
+
 .mail-icon:before {
   content: "\e603";
 }
 
+/*****************/
+/*PROBLEM SECTION*/
+/*****************/
+
 .problem-icon:before {
   content: "\e608";
 }
+
+.problem-list {
+  cursor: pointer;
+}
+
+.problem-content {
+  height: 14em;
+  background: rgba(97, 93, 100, 0.7);
+  padding: .1em .75em .1em .75em;
+  margin-bottom: .5em;
+}
+
+.problem-content p {
+  font-size: .75em;
+}
+
+#Answer {
+  font-family: 'Hallo Sans';
+  font-weight: lighter;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: #44414B;
+  height: 2em;
+  width: 3em;
+  color: #DFD9EC;
+  margin-right: 1em;
+  padding-left: .5em;
+}
+
+/***************/
+/*RIGHT SECTION*/
+/***************/
 
 .right {
   display: inline-block;
@@ -226,7 +271,7 @@ a {
   font-family: 'iconfont';
   font-size: 18px;
   font-weight: 800;
-  color: #DFD9EC;
+  color: #A19DB6;
   -webkit-font-smoothing: antialiased;
   -o-transform: scale(1);
   text-rendering: optimizeLegibility;
@@ -235,7 +280,7 @@ a {
 }
 
 .mobile-social-icons a:hover {
-  color: #fff;
+  color: #DFD9EC;
 }
 /*.deg54:hover, .deg126:hover, .deg198:hover, .deg270:hover, .deg342:hover{
   padding: .1em;
