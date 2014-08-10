@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Hallo Sans';
-  src: url('../fonts/icon-fonts/fonts/Hallo-sans.otf');
+  src: url('../fonts/icon-fonts/fonts/Hallo-sans.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Simplifica';
-  src: url('../fonts/icon-fonts/fonts/SIMPLIFICA.ttf');
+  src: url('../fonts/icon-fonts/fonts/SIMPLIFICA.ttf') format('truetype');
 }
 
 @font-face {
