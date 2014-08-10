@@ -1,7 +1,8 @@
 @font-face {
   font-family: "Hallo Sans";
-  src: url('../fonts/Hallo Sans/Hallo sans.otf');
-  font-family: "Hallo Sans Light";
+  src: url('../fonts/Hallo-Sans/Hallo-sans.otf');
+  font-family: "Simplifica";
+  src: url('../fonts/SIMPLIFICA/SIMPLIFICA.ttf');
   font-family: 'iconfont';
   src:url('../fonts/icon-fonts/fonts/icomoon.eot');
   src:url('../fonts/icon-fonts/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
