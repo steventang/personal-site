@@ -17,6 +17,9 @@ body {
   -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
   text-shadow: rgba(0,0,0,.01) 0 0 1px;
   font-smooth: always;
+  background-image: url('../images/bg.svg');
+  background-color: #474549;
+  background-position: center;
 }
 
 a {
@@ -32,15 +35,11 @@ a {
 }
 
 .wrapper { 
-  position: fixed;
+  position: relative;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: url('../images/bg.svg');
-  background-color: #474549;
-  background-position: center;
-  background-size: cover
   text-rendering: optimizeLegibility;
 }
 
@@ -137,7 +136,7 @@ a {
 }
 
 .problem-content {
-  height: 14em;
+  height: 13.5em;
   background: rgba(97, 93, 100, 0.7);
   padding: .1em .75em .1em .75em;
   margin-bottom: .5em;
@@ -331,7 +330,7 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
-  .wrapper {background-image: none;}
+  body {background-image: none;}
   .circle-container {
     display: none;
   }
