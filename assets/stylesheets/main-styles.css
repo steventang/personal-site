@@ -1,8 +1,14 @@
 @font-face {
   font-family: "Hallo Sans";
-  src: url('Hallo-sans.otf');
+  src: url('../fonts/icon-fonts/fonts/Hallo-sans.otf');
+}
+
+@font-face {
   font-family: "Simplifica";
-  src: url('SIMPLIFICA.ttf');
+  src: url('../fonts/icon-fonts/fonts/SIMPLIFICA.ttf');
+}
+
+@font-face {
   font-family: 'iconfont';
   src:url('../fonts/icon-fonts/fonts/icomoon.eot');
   src:url('../fonts/icon-fonts/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
@@ -148,7 +154,7 @@ a {
 }
 
 #Answer {
-  font-family: 'Hallo Sans';
+  font-family: 'Hallo Sans', 'Arial';
   font-weight: lighter;
   font-size: 18px;
   border: none;
