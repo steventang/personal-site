@@ -17,7 +17,7 @@ $(document).ready(function(){
 //problem section slide animation
 
   $('.problem-content').hide();
-    $('.problem-list').click(function () {
+    $('.problem-div').click(function () {
       var $this = $(this);
         $(this).siblings('.problem-content').slideToggle(150, function () {
         });

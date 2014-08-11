@@ -124,7 +124,6 @@ a {
 }
 
 .mail-list{}
-.problem-list{}
 
 .mail-icon:before {
   content: "\e603";
@@ -143,7 +142,6 @@ a {
 }
 
 .problem-content {
-  height: 13.5em;
   background: rgba(97, 93, 100, 0.7);
   padding: .1em .75em .1em .75em;
   margin-bottom: .5em;
@@ -204,19 +202,23 @@ a {
 
 
 .deg54 { 
+  -webkit-transform: rotate(54deg) translate(10em) rotate(-54deg);
   transform: rotate(54deg) translate(10em) rotate(-54deg); /*translate 9 instead of 10 bc of padding of 1em for the background circle*/
-
 }
 .deg126 { 
+  -webkit-transform: rotate(126deg) translate(10em) rotate(-126deg);
   transform: rotate(126deg) translate(10em) rotate(-126deg);
 }
 .deg198 { 
+  -webkit-transform: rotate(198deg) translate(10em) rotate(-198deg);
   transform: rotate(198deg) translate(10em) rotate(-198deg);
 }
 .deg270 { 
+  -webkit-transform: rotate(270deg) translate(10em) rotate(-270deg);
   transform: rotate(270deg) translate(10em) rotate(-270deg);
 }
 .deg342 { 
+  -webkit-transform: rotate(342deg) translate(10em) rotate(-342deg);
   transform: rotate(342deg) translate(10em) rotate(-342deg);
 }
 
