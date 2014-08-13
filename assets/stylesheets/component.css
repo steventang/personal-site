@@ -1,14 +1,10 @@
 .hi-icon {
 	display: inline-block;
 	cursor: pointer;
-	margin: 15px 30px;
-	width: 90px;
-	height: 90px;
 	border-radius: 50%;
 	text-align: center;
 	position: relative;
 	z-index: 1;
-	color: #fff;
 }
 
 .hi-icon:after {
@@ -62,5 +58,4 @@
 	-ms-transform: scale(1);
 	transform: scale(1);
 	opacity: 1;
-
 }

@@ -17,10 +17,10 @@ $(document).ready(function(){
 //problem section slide animation
 
   $('.problem-content').hide();
-    $('.problem-div').click(function () {
-      var $this = $(this);
-        $(this).siblings('.problem-content').slideToggle(150, function () {
-        });
+  $('.problem-div').click(function () {
+    var $this = $(this);
+      $(this).siblings('.problem-content').slideToggle(150, function () {
+      });
     });
 
 //check problem answer
@@ -28,7 +28,17 @@ $(document).ready(function(){
 
   $('#Answer').on('input', function() {
     var answer = $(this).val();
-    if(answer == '10'){$('#Check-answer').text('Correct!').hide().fadeIn(150);}
-    else{$('#Check-answer').text('Nope!').hide().fadeIn(150);}
+    if(answer == '10'){
+      $('.validate-wrong').hide();
+      $('.validate-correct').css("display", "inline");
+      $('#Check-answer').text('Correct!').hide().fadeIn(150);
+      
+    }
+    else{
+      $('.validate-correct').hide();
+      $('.validate-wrong').css("display", "inline");
+      $('#Check-answer').text('Nope!').hide().fadeIn(150);
+      
+    }
   });
 });

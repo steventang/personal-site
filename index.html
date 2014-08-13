@@ -17,23 +17,25 @@
 				<div class="left six columns offset-by-one">
 					<h1>Steven Tang</h1>
 					<p>
-						I've dabbled in startups, finance, and numbers. I like designing things for fun. I'm currently working on <a href="http://ribbon.co" target="_blank">Ribbon</a> and live in San Francisco.
+						I've dabbled in startups, finance, and numbers. Sometimes I try designing things for fun. I'm currently working on <a href="http://ribbon.co" target="_blank">Ribbon</a> and live in San Francisco.
 					</p>
 					<ul>
 						<li><a class="mail-list" href="mailto: stang12290@gmail.com"><span class="bullet mail-icon"></span>Contact Me</a></li>	
 						<div class="problem-content">
 							<p>A king is hosting a party in 24 hours and has 1,000 bottles of wine to serve. You've just discovered that an evil jester poisoned one of them. The poison kills its drinker within 24 hours and exhibits no symptoms beforehand.</p>
 							<p>Fortunately you have an infinite number of rats at your disposal that react to the poison as humans do. What is the minimum number of rats you need to figure out which bottle is poisoned?</p>
-							<div class="problem-input">
-							<form>
-								<input type="text" id="Answer" autocomplete="off" onkeydown="return ( event.ctrlKey || event.altKey 
-                    || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) 
-                    || (95<event.keyCode && event.keyCode<106)
-                    || (event.keyCode==8) || (event.keyCode==9) 
-                    || (event.keyCode>34 && event.keyCode<40) 
-                    || (event.keyCode==46) )" /><!--validates number input-->
-								<span id="Check-answer"></span>
-							</form>
+							<div>
+								<form>
+									<input type="text" id="Answer" autocomplete="off" placeholder="#" onkeydown="return ( event.ctrlKey || event.altKey 
+	                    || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) 
+	                    || (95<event.keyCode && event.keyCode<106)
+	                    || (event.keyCode==8) || (event.keyCode==9) 
+	                    || (event.keyCode>34 && event.keyCode<40) 
+	                    || (event.keyCode==46) )" /><!--validates number input-->
+										<span class="validate-correct"></span>
+										<span class="validate-wrong"></span>
+										<span id="Check-answer"></span>
+								</form>
 							</div>
 						</div>	
 						<div class="problem-div"><span class="bullet problem-icon problem-list"></span><span class="problem-list">A fun problem</span></div><!--used spans like this to prevent entire div from being clickable-->

@@ -21,24 +21,17 @@
 
 body {
   -webkit-font-smoothing: antialiased;
-  -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
-  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  -moz-osx-font-smoothing: grayscale;
   font-smooth: always;
   background-image: url('../images/bg.svg');
   background-color: #474549;
   background-position: center;
+  background-attachment: fixed; /*this makes the bg behave for center positioning in moz*/
+  background-repeat: no-repeat;
 }
 
 a {
   color: inherit;
-}
-
-.icon:before {
-  font-family: 'iconfont';
-  font-size: 64px;
-  -webkit-font-smoothing: antialiased;
-  -o-transform: scale(1);
-  text-rendering: optimizeLegibility;
 }
 
 .wrapper { 
@@ -123,8 +116,6 @@ a {
   font-weight: 100;
 }
 
-.mail-list{}
-
 .mail-icon:before {
   content: "\e603";
 }
@@ -159,12 +150,34 @@ a {
   outline: none;
   background: #44414B;
   height: 2em;
-  width: 3em;
+  width: 4em;
   color: #DFD9EC;
-  margin-right: 1em;
+  margin-right: .5em;
   padding-left: .5em;
 }
 
+#Check-answer {
+  margin-left: 1.25em;
+  margin-top: .1em;
+}
+
+.validate-correct, .validate-wrong {
+  position: absolute;
+  font-family: 'iconfont';
+  padding-top: .13em;
+  display: none;
+}
+
+.validate-correct:before {
+  font-family: 'iconfont';
+  color: rgb(107, 189, 133);
+  content: "\e042";
+}
+
+.validate-wrong:before {
+  color: rgb(190, 108, 108);
+  content: "\e043";
+}
 /***************/
 /*RIGHT SECTION*/
 /***************/
@@ -193,13 +206,18 @@ a {
   color: #A19DB6;
 }
 
-/*
-.circle-container a:hover {
-  width: 5em; height: 5em;
-}*/
+.icon:before {
+  font-family: 'iconfont';
+  font-size: 64px;
+  -webkit-font-smoothing: antialiased;
+  -o-transform: scale(1);
+  text-rendering: optimizeLegibility;
+}
 
-.circle-container img { display: block; width: 100%; }
-
+.icon {
+  text-align: center;
+  vertical-align: top;
+}
 
 .deg54 { 
   -webkit-transform: rotate(54deg) translate(10em) rotate(-54deg);
@@ -273,6 +291,7 @@ a {
   display: inline;
   text-decoration: none;
   display: none;
+  margin-bottom: 1em;
 }
 
 .mobile-social-icons a{
@@ -290,19 +309,6 @@ a {
 .mobile-social-icons a:hover {
   color: #DFD9EC;
 }
-/*.deg54:hover, .deg126:hover, .deg198:hover, .deg270:hover, .deg342:hover{
-  padding: .1em;
-}*/
-
-
-/* this is for showing the circle on which the images are placed */
-
-/*.circle-container:after {
-  background: #474549;
-  width: 5em;
-  height: 5em;
-  border-radius: 50%;
-}*/
 
 .circle-container:before {
   position: absolute;
