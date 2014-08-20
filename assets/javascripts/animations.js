@@ -11,7 +11,7 @@ $(document).ready(function(){
     $(".problem-icon").css("color", "#D77691");
   });
   $(".problem-list").mouseout(function(){
-    $(".problem-icon").css("color", "#A19DB6");
+    $(".problem-icon").css("color", "#AFA1B9");
   });
 
 //problem section slide animation
