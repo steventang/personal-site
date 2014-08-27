@@ -28,10 +28,6 @@
 }
 
 .hi-icon-effect-1 .hi-icon:after {
-	/*top: -7px;
-	left: -7px;
-	padding: 7px;
-	box-shadow: inset 0 0 0 2px #DFD9EC;*/
 	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
 	-webkit-transform: scale(.8);
 	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
@@ -44,7 +40,7 @@
 
 /* Effect 1a */
 .no-touch .hi-icon-effect-1a .hi-icon:hover {
-	background: rgba(223,217,236,1);
+	background: #fff;
 	color: #474549;
 }
 
@@ -52,7 +48,7 @@
 	top: -7px;
 	left: -7px;
 	padding: 7px;
-	box-shadow: inset 0 0 0 2px #DFD9EC;/*lines up to here were moved down from hi-icon-effect1 .hi-icon:after so that circles show only when icons hovered on, not entire circle-container*/;
+	box-shadow: inset 0 0 0 2px #fff;/*lines up to here were moved down from hi-icon-effect1 .hi-icon:after so that circles show only when icons hovered on, not entire circle-container*/;
 	-webkit-transform: scale(1);
 	-moz-transform: scale(1);
 	-ms-transform: scale(1);

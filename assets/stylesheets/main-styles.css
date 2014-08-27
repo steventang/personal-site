@@ -1,17 +1,9 @@
 @font-face {
-  font-family: 'Hallo Sans';
-  src: url('../fonts/Hallo-Sans/Hallo-sans.otf') format('opentype');
+  font-family: 'Bariol';
+  src: url('../fonts/bariol_regular.otf') format('opentype');
 }
 
-@font-face {
-  font-family: 'Simplifica';
-  src: url('../fonts/SIMPLIFICA/SIMPLIFICA.ttf') format('truetype');
-}
 
-@font-face {
-  font-family: 'Futura';
-  src: url('../fonts/Futura/futura-medium.woff') format('woff');
-}
 
 @font-face {
   font-family: 'iconfont';
@@ -65,13 +57,12 @@ a {
   vertical-align: top;
   display: inline-block;
   text-align: left;
-  margin: .9em;
+  margin: .8em;
 }
 
 .left h1 {
   font-family: "Brandon Grotesque", "Arial";
   letter-spacing: 1;
-  font-weight: 600;
   color: #fff;
   font-size: 42px;
   text-transform: uppercase;
@@ -142,6 +133,7 @@ a {
   background: rgba(68, 62, 73, 0.7);
   padding: .1em .75em .1em .75em;
   margin-bottom: .5em;
+  border-radius: 1%;
 }
 
 .problem-content p {
@@ -328,23 +320,9 @@ a {
   color: #fff;
 }
 
-/*.circle-container a:not(.center):after {
-  position: absolute;
-  top: 50%; left: 50%;
-  width: 4px; height: 4px;
-  border-radius: 50%;
-
-  margin: -2px;
-  background: deeppink;
-  opacity: .3;
-  content: '';
-}*/
-.circle-container:hover a:after { opacity: 1; }
-.circle-container a:hover:after { opacity: .5; }
-
 #icon-bg-circle {
   background: #474549;
-  width: 5em
+  width: 5em;
   height: 5em;
   border-radius: 50%;
 }
@@ -357,3 +335,7 @@ a {
   .mobile-social-icons {
     display: inline;
   }
+  .main {
+    top: 2em;
+  }
+}
