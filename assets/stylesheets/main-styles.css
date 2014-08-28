@@ -1,11 +1,6 @@
 @import url('http://fonts.googleapis.com/css?family=Lato:200');
 
 @font-face {
-  font-family: 'Bariol';
-  src: url('../fonts/Bariol_Regular.otf') format('opentype');
-}
-
-@font-face {
   font-family: 'Brandon Grotesque';
   src: url('../fonts/Brandon_med.otf') format('opentype');
 }
