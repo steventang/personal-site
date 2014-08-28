@@ -23,37 +23,6 @@ $(document).ready(function(){
       });
     });
 
-//check problem answer
-//If you're smart enough to check the code for the answer, then you're just insulting your own intelligence by not solving it yourself, bitch
-  /*$('#Answer').on('input', function() {
-
-    var delay=500;
-
-    var answer = $(this).val();
-    if(answer == '10'){
-
-
-      setTimeout(function(){
-        $('.validate-wrong').hide();
-        $('.validate-correct').css("display", "inline");
-        $('#Check-answer').text('Correct!').hide().fadeIn(150);
-       },delay);          
-    }
-    else{
-
-      setTimeout(function(){
-        $('.validate-correct').hide();  
-        $('.validate-wrong').css("display", "inline");
-        $('#Check-answer').text('Nope!').hide().fadeIn(150);
-       },delay);
-    }
-    if(answer == ''){
-      $('.validate-wrong').hide();
-      $('.validate-correct').hide();
-      $('#Check-answer').hide();
-    }
-  });*/
-
   var typingTimer; //timer identifier
   var doneTypingInterval = 700;
 
