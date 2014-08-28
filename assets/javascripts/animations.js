@@ -24,17 +24,56 @@ $(document).ready(function(){
     });
 
 //check problem answer
-//***If you're smart enough to check the code for the answer, then you're just insulting your own intelligence by not solving it yourself, bitch**
+//If you're smart enough to check the code for the answer, then you're just insulting your own intelligence by not solving it yourself, bitch
+  /*$('#Answer').on('input', function() {
 
-  $('#Answer').on('input', function() {
+    var delay=500;
+
     var answer = $(this).val();
     if(answer == '10'){
-      $('.validate-wrong').hide();
-      $('.validate-correct').css("display", "inline");
-      $('#Check-answer').text('Correct!').hide().fadeIn(150);     
+
+
+      setTimeout(function(){
+        $('.validate-wrong').hide();
+        $('.validate-correct').css("display", "inline");
+        $('#Check-answer').text('Correct!').hide().fadeIn(150);
+       },delay);          
     }
     else{
+
+      setTimeout(function(){
+        $('.validate-correct').hide();  
+        $('.validate-wrong').css("display", "inline");
+        $('#Check-answer').text('Nope!').hide().fadeIn(150);
+       },delay);
+    }
+    if(answer == ''){
+      $('.validate-wrong').hide();
       $('.validate-correct').hide();
+      $('#Check-answer').hide();
+    }
+  });*/
+
+  var typingTimer; //timer identifier
+  var doneTypingInterval = 700;
+
+  $('#Answer').keyup(function(){
+    clearTimeout(typingTimer);
+    if ($('#Answer').val) {
+      typingTimer = setTimeout(doneTyping, doneTypingInterval);
+    }
+  });
+
+  //user is finished typing, now validate answer
+  function doneTyping () {
+   var answer = $('#Answer').val();
+   if(answer == '10'){
+      $('.validate-wrong').hide();
+      $('.validate-correct').css("display", "inline");
+      $('#Check-answer').text('Correct!').hide().fadeIn(150);        
+    }
+    else{
+      $('.validate-correct').hide();  
       $('.validate-wrong').css("display", "inline");
       $('#Check-answer').text('Nope!').hide().fadeIn(150);
     }
@@ -43,5 +82,5 @@ $(document).ready(function(){
       $('.validate-correct').hide();
       $('#Check-answer').hide();
     }
-  });
+  }
 });
