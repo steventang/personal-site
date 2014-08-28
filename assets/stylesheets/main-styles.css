@@ -1,4 +1,5 @@
-@import url('http://fonts.googleapis.com/css?family=Lato:200');
+@import url('http://fonts.googleapis.com/css?family=Lato:400');
+@import url('http://fonts.googleapis.com/css?family=Pontano+Sans');
 
 @font-face {
   font-family: 'Brandon Grotesque';
@@ -74,7 +75,7 @@ a {
 
 .left ul {
   font-family: "Lato", "Arial";
-  font-weight: 200;
+  font-weight: 400;
   color: #AFA1B9;
   font-size: 20px;
   margin-top: 0;
@@ -97,7 +98,7 @@ a {
   font-family: 'Lato', "Arial";
   font-size: 17px;
   line-height: 1.6em;
-  font-weight: 200;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -138,11 +139,10 @@ a {
 
 .problem-content p {
   font-size: .75em;
-  line-height: 1.25em;
+  line-height: 1.5em;
 }
 
 #Answer {
-  font-family: 'Lato', 'Arial';
   font-weight: lighter;
   font-size: 18px;
   border: none;
@@ -163,7 +163,7 @@ a {
 .validate-correct, .validate-wrong {
   position: absolute;
   font-family: 'iconfont';
-  padding-top: .13em;
+  padding-top: .28em;
   display: none;
 }
 
