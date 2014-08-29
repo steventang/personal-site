@@ -1,9 +1,8 @@
 @import url('http://fonts.googleapis.com/css?family=Lato:400');
-@import url('http://fonts.googleapis.com/css?family=Pontano+Sans');
 
 @font-face {
   font-family: 'Brandon Grotesque';
-  src: url('../fonts/Brandon_med.otf') format('opentype');
+  src: url('../fonts/Brandon_bld.otf') format('opentype');
 }
 
 @font-face {
@@ -63,7 +62,7 @@ a {
 
 .left h1 {
   font-family: "Brandon Grotesque", "Arial";
-  letter-spacing: 1;
+  letter-spacing: .1em;
   color: #fff;
   font-size: 42px;
   text-transform: uppercase;
