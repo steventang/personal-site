@@ -144,12 +144,12 @@ a {
 
 #Answer {
   font-weight: lighter;
-  font-size: 18px;
+  font-size: 16px;
   border: none;
   outline: none;
   background: #373241;
   height: 2em;
-  width: 4em;
+  width: 8em;
   color: #DFD9EC;
   margin-right: .5em;
   padding-left: .5em;

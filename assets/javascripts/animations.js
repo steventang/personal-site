@@ -49,7 +49,7 @@ $(document).ready(function(){
     if(answer == ''){
       $('.validate-wrong').hide();
       $('.validate-correct').hide();
-      $('#Check-answer').text('Check answer');
+      $('#Check-answer').hide();
     }
   }
 });
